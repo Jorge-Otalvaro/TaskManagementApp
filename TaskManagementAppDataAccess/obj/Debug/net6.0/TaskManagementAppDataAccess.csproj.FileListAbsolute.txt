@@ -1,0 +1,15 @@
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\bin\Debug\net6.0\TaskManagementAppDataAccess.deps.json
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\bin\Debug\net6.0\TaskManagementAppDataAccess.runtimeconfig.json
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\bin\Debug\net6.0\TaskManagementAppDataAccess.dll
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\bin\Debug\net6.0\TaskManagementAppDataAccess.pdb
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.csproj.AssemblyReference.cache
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.AssemblyInfoInputs.cache
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.AssemblyInfo.cs
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.sourcelink.json
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.dll
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\refint\TaskManagementAppDataAccess.dll
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.pdb
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\TaskManagementAppDataAccess.genruntimeconfig.cache
+C:\Users\georg\source\repos\TaskManagementApp\TaskManagementAppDataAccess\obj\Debug\net6.0\ref\TaskManagementAppDataAccess.dll
