@@ -84,43 +84,44 @@ namespace TaskManagementAppConsole
             Console.WriteLine("=========================================\n");
         }
 
-        private async void MarkTaskAsCompleted()
+        private async Task MarkTaskAsCompleted()
         {
+            int taskId;
+
             Console.Write("Ingrese el ID de la tarea que desea marcar como completada: ");
+            string input = Console.ReadLine();
 
-            if (int.TryParse(Console.ReadLine(), out int taskId))
+            if (!int.TryParse(input, out taskId))
             {
-                Task<TaskItem> taskToMark = taskRepository.GetTaskById(taskId);
-
-                if (taskToMark.Result != null)
-                {
-                    if (!taskToMark.IsCompleted)
-                    {
-                        taskRepository.MarkTaskAsCompleted(taskId); 
-                        Console.WriteLine("=========================================");
-                        Console.WriteLine("Tarea marcada como completada.");
-                        Console.WriteLine("=========================================\n");
-                    }
-                    else
-                    {
-                        Console.WriteLine("=========================================");
-                        Console.WriteLine("Esta tarea ya está completada.");
-                        Console.WriteLine("=========================================\n");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("=========================================");
-                    Console.WriteLine("No se encontró ninguna tarea con el ID proporcionado.");
-                    Console.WriteLine("=========================================\n");
-                }
-            }
-            else
-            {
-                Console.WriteLine("=========================================");
+                Console.WriteLine("\n=========================================");
                 Console.WriteLine("Entrada inválida. Por favor, ingresa un número válido.");
                 Console.WriteLine("=========================================\n");
-            }                        
+                return;
+            }
+
+            var taskToMark = await taskRepository.GetTaskById(taskId);
+
+            if (taskToMark == null)
+            {
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("No se encontró ninguna tarea con el ID proporcionado.");
+                Console.WriteLine("=========================================\n");
+                return;
+            }
+
+            if (taskToMark.IsCompleted)
+            {
+                Console.WriteLine("\n=========================================");
+                Console.WriteLine("Esta tarea ya está completada.");
+                Console.WriteLine("=========================================\n");
+                return;
+            }
+
+            taskRepository.MarkTaskAsCompleted(taskId);
+
+            Console.WriteLine("\n=========================================");
+            Console.WriteLine("Tarea marcada como completada.");
+            Console.WriteLine("=========================================\n");
         }
 
         private async void ListPendingTasks()
